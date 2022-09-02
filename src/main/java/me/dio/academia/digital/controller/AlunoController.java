@@ -22,10 +22,7 @@ public class AlunoController {
     return service.create(form);
   }
 
-  @GetMapping("/avaliacoes/{id}")
-  public List<AvaliacaoFisica> getAllAvaliacaoFisicaId(@PathVariable Long id) {
-    return service.getAllAvaliacaoFisicaId(id);
-  }
+
 
   @GetMapping
   public List<Aluno> getAll(@RequestParam(value = "dataDeNascimento", required = false)
